@@ -1,0 +1,240 @@
+:root {
+
+  --buttons-background-color: linear-gradient(to right, #0a0f25, #0f1a4d);
+  --background-color: linear-gradient(to right, #0a0f25, #0f1a4d);
+  --default-black: #1b1816;
+  --light-grey: rgb(255, 255, 255);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background: var(--background-color);
+}
+
+main {
+  display: flex;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+}
+
+/*Nav*/ 
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--default-black);
+  color: white;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.nav-container ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-container ul li {
+  list-style: none;
+}
+
+.nav-container .img-container {
+  padding: 10px;
+  width: 100px;
+}
+
+.nav-container .logo {
+  width: 100px;
+}
+
+/*AuthenticationForm*/
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  background: yellow;
+}
+
+.title {
+  color: white;
+  margin: 0;
+  margin: 30px 0 30px 0;
+}
+
+.authentication-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  background: var(--background-color);
+}
+
+.authentication-container .img-container {
+  /* padding: 10px; */
+  width: 100px;
+}
+
+.authentication-container .img-container .logo {
+  width: 100px;
+}
+
+.login-container,
+.password-container {
+  display: flex;
+  flex-direction: co;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 10px;;
+  gap: 10px;
+}
+
+.login-container label,
+.password-container label {
+  color: white;
+  width: 80px;
+  text-align: right;
+  margin-right: 0px;
+}
+
+.remember-me-forgot-password-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+
+.remember-me-container,
+.forgot-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.remember-me-text {
+  color: white;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
+.forgot-password,
+.remember-me-text {
+  color: white;
+  transition: color 300ms ease-in;
+}
+
+.remember-me-text:hover,
+.forgot-password:hover {
+  color: rgb(218, 218, 218);
+}
+
+
+.authentication-input {
+  flex: 1;
+  padding: 5px;
+  background-color: var(--light-grey);
+  border: 3px solid rgb(12, 48, 131);
+  border-radius: 10px;
+  color: var(--default-black);
+  font-size: 1rem;
+}
+
+.authentication-input:focus {
+  outline: none;
+}
+
+
+.authenticate-button,
+.register-button {
+  font-family: system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 80%;
+  height: 100px;
+  border: 1px solid var(--default-black);
+  border-radius: 10px;
+  background: rgb(11, 42, 114);
+  color: white;
+  box-shadow: 0px 0px 5px black;
+  transition: all 500ms ease;
+  padding: 5px;
+}
+
+.authenticate-button {
+  margin: 10px 0 0 0;
+}
+
+.register-button {
+  margin: 8px 0 0 0;
+}
+
+.authenticate-button:hover,
+.register-button:hover {
+  background: rgb(15, 58, 157);
+  cursor: pointer;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  color: white;
+  cursor: pointer;
+}
+
+main .img-container{
+    margin: 25px 0 25px 0;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: center;
+  background: var(--default-black);
+  width: 280px;
+  height: 500px;
+}
