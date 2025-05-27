@@ -1,15 +1,14 @@
-import { useState } from 'react'
 import '../styles/App.css'
 import Header from '../components/Header'
-import Hero from '../components/Hero'
+import AuthContainer from './AuthContainer'
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
+      <AuthContainer />
     </>
   )
 }
 
-export default App
+export default App;

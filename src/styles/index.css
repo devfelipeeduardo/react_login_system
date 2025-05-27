@@ -23,6 +23,7 @@ body {
 
 h1 {
   font-size: 3.5em;
+  user-select: none;
 }
 
 @media (prefers-color-scheme: light) {
